@@ -1,0 +1,11 @@
+x = int(input("Enter a number"))
+first_num = 0
+last_num = 1
+temp_num = 0
+fibonacci_nums = []
+while first_num < x:
+    fibonacci_nums.append(last_num)
+    temp_num = first_num + last_num
+    first_num = last_num
+    last_num = temp_num
+print(fibonacci_nums)
